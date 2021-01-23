@@ -866,13 +866,14 @@
         <link rel="stylesheet" href="/build/css/bundle.css" />
         <script type="text/javascript">
             let ver = 1;
-            if (navigator.serviceWorker.controller) {
-                console.log("[PWA Builder] active service worker found, no need to register");
-            } else {
-                navigator.serviceWorker.register("pwabuilder-sw.min.js", { scope: "./" }).then(function (reg) {
-                    console.log("Service worker has been registered for scope:" + reg.scope);
-                });
-            }
+            // pwa
+            // if (navigator.serviceWorker.controller) {
+            //     console.log("[PWA Builder] active service worker found, no need to register");
+            // } else {
+            //     navigator.serviceWorker.register("pwabuilder-sw.min.js", { scope: "./" }).then(function (reg) {
+            //         console.log("Service worker has been registered for scope:" + reg.scope);
+            //     });
+            // }
         </script>
         <script defer src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"></script>
         <script defer type="module" src="https://unpkg.com/dimport@1.0.0?module" data-main="/build/main.js"></script>
