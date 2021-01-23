@@ -1,0 +1,30 @@
+{
+  "name": "pantau-covid-svlt",
+  "version": "1.0.1",
+  "description": "A SvelteJS project",
+  "author": "zerofinding <zerofinding.dev@gmail.com>",
+  "scripts": {
+    "build": "rollup -c rollup.config-no-hmr.js",
+    "dev": "rollup -c -w rollup.config-no-hmr.js",
+    "start": "sirv public -s --dev --port 57392",
+    "dev:hmr": "nollup -c -w --hot --port 57392 --content-base ./public"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^14.0.0",
+    "@rollup/plugin-node-resolve": "^8.0.0",
+    "nollup": "^0.13.13",
+    "rollup": "^2.3.4",
+    "rollup-plugin-cleaner": "^1.0.0",
+    "rollup-plugin-hot": "^0.1.0",
+    "rollup-plugin-livereload": "^2.0.0",
+    "rollup-plugin-svelte": "^6.0.0",
+    "rollup-plugin-svelte-hot": "^0.10.0",
+    "rollup-plugin-terser": "^7.0.0",
+    "svelte": "^3.4.4"
+  },
+  "dependencies": {
+    "sirv-cli": "^1.0.0",
+    "svelte-loadable": "^1.1.0",
+    "svelte-routing": "^1.4.2"
+  }
+}

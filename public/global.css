@@ -1,0 +1,34 @@
+/*html {
+  overflow: none;
+}
+body {
+  background: rgba(255, 255, 255, 0.1) url('//dev-vuegss.com:7401/public/pattern-so.svg') repeat!important;
+}
+#toastpure{visibility:hidden;background-color:#333;color:#fff;text-align:center;border-radius:12px;padding:13px;position:fixed;z-index:9999999;right:20px;top:10px;box-shadow:0 3px 6px rgba(0,0,0,.16),0 3px 6px rgba(0,0,0,.23)}#toastpure[data-state=warning]{background-color:#42a0bc}#toastpure[data-state=success]{background-color:#63ad63}#toastpure[data-state=error]{background-color:#ed1e24}#toastpure[data-state=info]{background-color:#f9a937}#toastpure.show{visibility:visible;-webkit-animation:toastpurefadein .5s,toastpurefadeout .5s 2.5s;animation:toastpurefadein .5s,toastpurefadeout .5s 2.5s}@-webkit-keyframes toastpurefadein{from{right:0;opacity:0}to{right:20px;opacity:1}}@keyframes toastpurefadein{from{right:0;opacity:0}to{right:20px;opacity:1}}@-webkit-keyframes toastpurefadeout{from{right:20px;opacity:1}to{right:0;opacity:0}}@keyframes toastpurefadeout{from{right:20px;opacity:1}to{right:0;opacity:0}}
+*/
+.image__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+}
+.image__wrapper.loaded .image__item {
+  visibility: visible;
+  opacity: 1;
+  border: 0;
+}
+.image__wrapper.loaded .image__spinner {
+  display: none;
+  width: 100%;
+}
+.image__item {
+  width: 100%;
+  border-radius: 4px;
+  transition: all 0.4s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.ql-container{
+  height: auto!important;
+}
