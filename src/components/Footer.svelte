@@ -20,7 +20,7 @@
     </p>
     <span class="inline-flex justify-center mt-4 space-x-5 sm:ml-auto sm:mt-0 sm:justify-start">
       <a
-      href="https://github.com/zerofinding"
+      href="https://github.com/zerofinding/pantau-covid-svlt"
       target="_blank"
       title="github.com - @zerofinding"
       alt="github.com - @zerofinding"
