@@ -15,5 +15,6 @@ npm run dev:hmr
 npm run build
 ```
 
-### Clone from:
-Vue version [fiqryq/Pantaucovid-vue](https://github.com/fiqryq/Pantaucovid-vue).
+## Credits
+
+This is basically a Vue project for [Pantaucovid-vue](https://github.com/fiqryq/Pantaucovid-vue).
