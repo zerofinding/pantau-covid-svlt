@@ -11,6 +11,16 @@
   : (scrollY > 275 ? true : false)
 
   export let covid
+  
+  let dt = new Date(covid.lastUpdate)
+
+  let dtd = dt.getDate()
+  let dtm = dt.toLocaleString('id-ID', { month: 'long' })
+  let dty = dt.getFullYear()
+
+  let tmh = ('0' + dt.getHours()).slice(-2)
+  let tmm = ('0' + dt.getMinutes()).slice(-2)
+  let tms = ('0' + dt.getSeconds()).slice(-2)
 </script>
 
 <svelte:window bind:scrollY={scrollY} bind:innerHeight />
@@ -20,7 +30,7 @@
     <h2 class="mb-1 text-3xl font-extrabold leading-tight text-gray-900">
       Kasus Di indonesia
     </h2>
-    <p class="mb-10 text-lg text-gray-500">Update terakhir { covid.lastUpdate }</p>
+    <p class="mb-10 text-lg text-gray-500">Update, <span style="font-weight: bold;">{ dtd } { dtm } { dty }</span> <span style="font-style: italic">{ tmh }:{ tmm }:{ tms }</span></p>
     {#if isCase}
     <div
     class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-16 lg:gap-x-24 gap-y-20"
